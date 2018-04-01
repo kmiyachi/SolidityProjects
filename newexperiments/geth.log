@@ -1,0 +1,100 @@
+INFO [03-31|22:07:17] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [03-31|22:07:17] Starting peer-to-peer node               instance=Geth/v1.8.2-stable/darwin-amd64/go1.10
+INFO [03-31|22:07:17] Allocated cache and file handles         database=/Users/kenmiyachi/Library/Ethereum/testnet/geth/chaindata cache=768 handles=128
+INFO [03-31|22:07:17] Writing custom genesis block 
+INFO [03-31|22:07:17] Persisted trie from memory database      nodes=355 size=65.25kB time=1.111511ms gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [03-31|22:07:17] Initialised chain configuration          config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Byzantium: 1700000 Constantinople: <nil> Engine: ethash}"
+INFO [03-31|22:07:17] Disk storage enabled for ethash caches   dir=/Users/kenmiyachi/Library/Ethereum/testnet/geth/ethash count=3
+INFO [03-31|22:07:17] Disk storage enabled for ethash DAGs     dir=/Users/kenmiyachi/.ethash                              count=2
+INFO [03-31|22:07:17] Initialising Ethereum protocol           versions="[63 62]" network=3
+INFO [03-31|22:07:17] Loaded most recent local header          number=0 hash=419410…ca4a2d td=1048576
+INFO [03-31|22:07:17] Loaded most recent local full block      number=0 hash=419410…ca4a2d td=1048576
+INFO [03-31|22:07:17] Loaded most recent local fast block      number=0 hash=419410…ca4a2d td=1048576
+INFO [03-31|22:07:17] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [03-31|22:07:17] Starting P2P networking 
+INFO [03-31|22:07:23] UDP listener up                          self=enode://a5dfd5746f68a6cd2468ba5b3a17bb0b6483522b15d91dd10c29f6ff7aa408c7e57edab856011b53fe296f9799d3480fbc1fbd6207e20d0c31deb873e18c7657@[::]:30303
+INFO [03-31|22:07:23] RLPx listener up                         self=enode://a5dfd5746f68a6cd2468ba5b3a17bb0b6483522b15d91dd10c29f6ff7aa408c7e57edab856011b53fe296f9799d3480fbc1fbd6207e20d0c31deb873e18c7657@[::]:30303
+INFO [03-31|22:07:23] IPC endpoint opened                      url=/Users/kenmiyachi/Library/Ethereum/testnet/geth.ipc
+INFO [03-31|22:07:23] HTTP endpoint opened                     url=http://127.0.0.1:8545                               cors= vhosts=localhost
+INFO [03-31|22:07:43] Block synchronisation started 
+INFO [03-31|22:07:48] Imported new block headers               count=192 elapsed=1.099s number=192 hash=9d4976…cf6e5b ignored=0
+INFO [03-31|22:07:48] Imported new block receipts              count=10  elapsed=360.301µs number=10  hash=b3074f…dde93e size=40.00B  ignored=0
+INFO [03-31|22:07:48] Imported new block headers               count=192 elapsed=20.463ms  number=384 hash=373546…d9ea37 ignored=0
+INFO [03-31|22:07:53] Imported new block receipts              count=3   elapsed=2.356ms   number=13  hash=f9ff47…e4912b size=8.15kB  ignored=0
+INFO [03-31|22:07:53] Imported new block headers               count=192 elapsed=17.307ms  number=576 hash=a43563…4024bd ignored=0
+INFO [03-31|22:08:07] Imported new state entries               count=285 elapsed=4.75µs    processed=285 pending=4561 retry=0 duplicate=0 unexpected=0
+INFO [03-31|22:08:08] Imported new block receipts              count=3   elapsed=1.009ms   number=16  hash=9da848…2d5285 size=1.50kB  ignored=0
+INFO [03-31|22:08:08] Imported new block headers               count=192 elapsed=18.544ms  number=768 hash=0ce2af…8c392c ignored=0
+INFO [03-31|22:08:22] Imported new block receipts              count=2   elapsed=158.238µs number=18  hash=57f846…0c5dcb size=1.50kB  ignored=0
+INFO [03-31|22:08:22] Imported new block receipts              count=42  elapsed=597.488µs number=60  hash=113d74…e0f313 size=168.00B ignored=0
+INFO [03-31|22:08:22] Imported new block headers               count=192 elapsed=18.203ms  number=960 hash=607a46…e26b6f ignored=0
+INFO [03-31|22:08:33] Imported new block receipts              count=37  elapsed=529.229µs number=97  hash=bf0c3f…2ffac1 size=1.21kB  ignored=0
+INFO [03-31|22:08:33] Imported new block headers               count=192 elapsed=18.895ms  number=1152 hash=4ec42f…556803 ignored=0
+INFO [03-31|22:08:47] Imported new block receipts              count=74  elapsed=3.156ms   number=171  hash=706cff…063364 size=2.43kB  ignored=0
+INFO [03-31|22:08:47] Imported new block headers               count=384 elapsed=33.513ms  number=1536 hash=c3d6bd…2ba848 ignored=0
+INFO [03-31|22:08:53] Imported new state entries               count=611 elapsed=771.876µs processed=896 pending=5703 retry=20 duplicate=0 unexpected=0
+INFO [03-31|22:08:54] Imported new block receipts              count=56  elapsed=1.473ms   number=227  hash=3e6d6f…8843b4 size=1.29kB  ignored=0
+INFO [03-31|22:08:54] Imported new block headers               count=192 elapsed=18.911ms  number=1728 hash=0733bf…53d05a ignored=0
+INFO [03-31|22:08:54] Imported new block receipts              count=11  elapsed=510.829µs number=238  hash=120ffc…b59e86 size=1.11kB  ignored=0
+INFO [03-31|22:08:54] Imported new block headers               count=192 elapsed=19.460ms  number=1920 hash=546f66…d2b129 ignored=0
+INFO [03-31|22:09:04] Imported new state entries               count=520 elapsed=1.122ms   processed=1416 pending=5687 retry=0  duplicate=0 unexpected=0
+INFO [03-31|22:09:04] Imported new block receipts              count=63  elapsed=1.973ms   number=301  hash=01aff5…6fe5de size=2.39kB  ignored=0
+INFO [03-31|22:09:04] Imported new block headers               count=384 elapsed=32.369ms  number=2304 hash=3fdf77…284728 ignored=0
+INFO [03-31|22:09:04] Imported new block receipts              count=39  elapsed=1.283ms   number=340  hash=c171e4…eb6fa6 size=1.23kB  ignored=0
+INFO [03-31|22:09:04] Imported new block headers               count=192 elapsed=19.465ms  number=2496 hash=be7e32…1ba627 ignored=0
+INFO [03-31|22:09:13] Imported new block receipts              count=34  elapsed=588.304µs number=374  hash=fc0939…5e359f size=2.27kB  ignored=0
+INFO [03-31|22:09:13] Imported new block headers               count=384 elapsed=35.520ms  number=2880 hash=cead30…7ceabf ignored=0
+INFO [03-31|22:09:15] Imported new block receipts              count=72  elapsed=1.179ms   number=446  hash=b36437…d73207 size=1.89kB  ignored=0
+INFO [03-31|22:09:15] Imported new block headers               count=192 elapsed=20.389ms  number=3072 hash=cc4abf…b6a7de ignored=0
+INFO [03-31|22:09:17] Imported new state entries               count=601 elapsed=1.742ms   processed=2017 pending=5301 retry=12 duplicate=0 unexpected=0
+INFO [03-31|22:09:23] Imported new block receipts              count=126 elapsed=1.618ms   number=572  hash=7c897e…b5536a size=3.17kB  ignored=0
+INFO [03-31|22:09:23] Imported new block headers               count=384 elapsed=36.790ms  number=3456 hash=8cc983…3006a4 ignored=0
+INFO [03-31|22:09:28] Imported new block receipts              count=58  elapsed=1.095ms   number=630  hash=5cf03b…6be45b size=2.37kB  ignored=0
+INFO [03-31|22:09:28] Imported new block headers               count=192 elapsed=19.234ms  number=3648 hash=8f9aae…39f9fc ignored=0
+INFO [03-31|22:09:30] Imported new block receipts              count=70  elapsed=1.060ms   number=700  hash=e4e690…38f536 size=1.35kB  ignored=0
+INFO [03-31|22:09:30] Imported new block headers               count=192 elapsed=19.336ms  number=3840 hash=5feedc…1488f3 ignored=0
+INFO [03-31|22:09:33] Imported new state entries               count=721 elapsed=2.374ms   processed=2738 pending=5029 retry=2  duplicate=0 unexpected=0
+INFO [03-31|22:09:33] Imported new block receipts              count=74  elapsed=2.726ms   number=774  hash=856036…5f2eae size=2.44kB  ignored=0
+INFO [03-31|22:09:35] Imported new block headers               count=192 elapsed=18.673ms  number=4032 hash=80f182…e29997 ignored=0
+INFO [03-31|22:09:36] Imported new block headers               count=192 elapsed=18.805ms  number=4224 hash=b25d17…268361 ignored=0
+INFO [03-31|22:09:37] Imported new block receipts              count=369 elapsed=3.935ms   number=1143 hash=294102…ae63b8 size=4.69kB  ignored=0
+INFO [03-31|22:09:43] Imported new block headers               count=192 elapsed=18.971ms  number=4416 hash=477b2d…8944fa ignored=0
+INFO [03-31|22:09:44] Imported new block receipts              count=99  elapsed=1.134ms   number=1242 hash=baa99c…8e4bf8 size=4.68kB  ignored=0
+INFO [03-31|22:09:44] Imported new block headers               count=192 elapsed=18.953ms  number=4608 hash=c1fdc3…fd5364 ignored=0
+INFO [03-31|22:09:49] Imported new state entries               count=500 elapsed=1.511ms   processed=3238 pending=5046 retry=3  duplicate=0 unexpected=0
+INFO [03-31|22:09:49] Imported new block receipts              count=32  elapsed=447.161µs number=1274 hash=b2abb8…379b24 size=1.73kB  ignored=0
+INFO [03-31|22:09:52] Imported new block receipts              count=87  elapsed=1.114ms   number=1361 hash=9932fc…b9cd21 size=3.56kB  ignored=0
+INFO [03-31|22:09:53] Imported new block headers               count=384 elapsed=35.552ms  number=4992 hash=1d15ce…fb6b1f ignored=0
+INFO [03-31|22:09:56] Imported new block receipts              count=155 elapsed=2.006ms   number=1516 hash=ed1caf…97cb11 size=4.37kB  ignored=0
+INFO [03-31|22:09:56] Imported new block headers               count=384 elapsed=35.071ms  number=5376 hash=786163…dea760 ignored=0
+INFO [03-31|22:09:58] Imported new state entries               count=768 elapsed=2.235ms   processed=4006 pending=5181 retry=2  duplicate=0 unexpected=0
+INFO [03-31|22:09:58] Imported new block receipts              count=194 elapsed=2.304ms   number=1710 hash=e30779…f997f4 size=3.98kB  ignored=0
+INFO [03-31|22:09:58] Imported new block headers               count=192 elapsed=18.923ms  number=5568 hash=864c2b…533629 ignored=0
+INFO [03-31|22:10:02] Imported new state entries               count=644 elapsed=1.697ms   processed=4650 pending=5091 retry=0  duplicate=0 unexpected=0
+INFO [03-31|22:10:02] Imported new block receipts              count=12  elapsed=575.996µs number=1722 hash=b2cf17…8edb00 size=1.12kB  ignored=0
+INFO [03-31|22:10:02] Imported new block headers               count=192 elapsed=18.967ms  number=5760 hash=0bb910…d68666 ignored=0
+INFO [03-31|22:10:08] Imported new state entries               count=701 elapsed=2.581ms   processed=5351 pending=4866 retry=0  duplicate=0 unexpected=0
+INFO [03-31|22:10:08] Imported new block headers               count=192 elapsed=20.798ms  number=5952 hash=1c6f7a…025b8c ignored=0
+INFO [03-31|22:10:08] Imported new block receipts              count=201 elapsed=2.614ms   number=1923 hash=9caece…dc0feb size=4.55kB  ignored=0
+INFO [03-31|22:10:09] Imported new block receipts              count=82  elapsed=2.198ms   number=2005 hash=472e6f…c364ac size=1.40kB  ignored=0
+INFO [03-31|22:10:09] Imported new block headers               count=192 elapsed=19.586ms  number=6144 hash=541ec9…c6ac03 ignored=0
+INFO [03-31|22:10:16] Imported new state entries               count=349 elapsed=2.576ms   processed=5700 pending=6158 retry=300 duplicate=0 unexpected=0
+INFO [03-31|22:10:16] Imported new block receipts              count=259 elapsed=5.524ms   number=2264 hash=6a3b23…3f6e4c size=4.25kB  ignored=0
+INFO [03-31|22:10:16] Imported new block headers               count=192 elapsed=20.824ms  number=6336 hash=81a25e…22637d ignored=0
+INFO [03-31|22:10:16] Imported new block receipts              count=45  elapsed=3.211ms   number=2309 hash=86470b…72c7b1 size=1.25kB  ignored=0
+INFO [03-31|22:10:16] Imported new block headers               count=192 elapsed=38.065ms  number=6528 hash=4435ba…7087f9 ignored=0
+INFO [03-31|22:10:16] Imported new block receipts              count=175 elapsed=2.326ms   number=2484 hash=594076…806e64 size=3.91kB  ignored=0
+INFO [03-31|22:10:16] Imported new block headers               count=192 elapsed=20.293ms  number=6720 hash=6b5be5…61f476 ignored=0
+INFO [03-31|22:10:21] Imported new block receipts              count=113 elapsed=2.554ms   number=2597 hash=3c803e…e1a014 size=2.05kB  ignored=0
+INFO [03-31|22:10:22] Imported new block headers               count=192 elapsed=20.215ms  number=6912 hash=16128d…be8be0 ignored=0
+INFO [03-31|22:10:22] Imported new block headers               count=192 elapsed=18.998ms  number=7104 hash=3f812b…284454 ignored=0
+INFO [03-31|22:10:23] Imported new block receipts              count=276 elapsed=2.584ms   number=2873 hash=1f009b…e34ca5 size=17.15kB ignored=0
+INFO [03-31|22:10:25] HTTP endpoint closed                     url=http://127.0.0.1:8545
+INFO [03-31|22:10:25] IPC endpoint closed                      endpoint=/Users/kenmiyachi/Library/Ethereum/testnet/geth.ipc
+INFO [03-31|22:10:25] Blockchain manager stopped 
+INFO [03-31|22:10:25] Stopping Ethereum protocol 
+WARN [03-31|22:10:25] Rolled back headers                      count=2048 header=7104->5056 fast=2873->2873 block=0->0
+WARN [03-31|22:10:25] Synchronisation failed, retrying         err="receipt download canceled (requested)"
+INFO [03-31|22:10:25] Ethereum protocol stopped 
+INFO [03-31|22:10:25] Transaction pool stopped 
+INFO [03-31|22:10:25] Database closed                          database=/Users/kenmiyachi/Library/Ethereum/testnet/geth/chaindata
