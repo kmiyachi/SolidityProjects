@@ -1,24 +1,23 @@
 pragma solidity ^0.4.16;
 
-/// @title Voting with delegation.
+// Modified off Ethereum website
 contract Ballot {
-    // This declares a new complex type which will
-    // be used for variables later.
-    // It will represent a single voter.
+    // Voter Structure
     struct Voter {
-        uint weight; // weight is accumulated by delegation
-        bool voted;  // if true, that person already voted
-        address delegate; // person delegated to
-        uint vote;   // index of the voted proposal
+        uint weight;        // weight is accumulated by delegation
+        bool voted;         // if true, that person already voted
+        address delegate;   // person delegated to
+        uint vote;          // index of the voted proposal
     }
 
-    // This is a type for a single proposal.
+    // Proposal that is voted on
     struct Proposal {
-        bytes32 name;   // short name (up to 32 bytes)
-        uint voteCount; // number of accumulated votes
+        bytes32 name;       // short name (up to 32 bytes)
+        uint voteCount;     // number of accumulated votes
+        bytes32 description; //Summary of the proposal
     }
 
-    address public chairperson;
+    address public currentVoter;
 
     // This declares a state variable that
     // stores a `Voter` struct for each possible address.
@@ -29,16 +28,12 @@ contract Ballot {
 
     /// Create a new ballot to choose one of `proposalNames`.
     function Ballot(bytes32[] proposalNames) public {
-        chairperson = msg.sender;
-        voters[chairperson].weight = 1;
+        currentVoter = msg.sender;
+        voters[currentVoter].weight = 1;
 
         // For each of the provided proposal names,
-        // create a new proposal object and add it
-        // to the end of the array.
+        // create a new proposal object and add it to proposals array
         for (uint i = 0; i < proposalNames.length; i++) {
-            // `Proposal({...})` creates a temporary
-            // Proposal object and `proposals.push(...)`
-            // appends it to the end of `proposals`.
             proposals.push(Proposal({
                 name: proposalNames[i],
                 voteCount: 0
@@ -47,17 +42,10 @@ contract Ballot {
     }
 
     // Give `voter` the right to vote on this ballot.
-    // May only be called by `chairperson`.
+    // May only be called by `currentVoter`.
     function giveRightToVote(address voter) public {
-        // If the argument of `require` evaluates to `false`,
-        // it terminates and reverts all changes to
-        // the state and to Ether balances. It is often
-        // a good idea to use this if functions are
-        // called incorrectly. But watch out, this
-        // will currently also consume all provided gas
-        // (this is planned to change in the future).
         require(
-            (msg.sender == chairperson) &&
+            (msg.sender == currentVoter) &&
             !voters[voter].voted &&
             (voters[voter].weight == 0)
         );
@@ -72,22 +60,12 @@ contract Ballot {
 
         // Self-delegation is not allowed.
         require(to != msg.sender);
-
-        // Forward the delegation as long as
-        // `to` also delegated.
-        // In general, such loops are very dangerous,
-        // because if they run too long, they might
-        // need more gas than is available in a block.
-        // In this case, the delegation will not be executed,
-        // but in other situations, such loops might
-        // cause a contract to get "stuck" completely.
         while (voters[to].delegate != address(0)) {
             to = voters[to].delegate;
 
-            // We found a loop in the delegation, not allowed.
+            // can't send to oneself
             require(to != msg.sender);
         }
-
         // Since `sender` is a reference, this
         // modifies `voters[msg.sender].voted`
         sender.voted = true;
